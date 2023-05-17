@@ -25,15 +25,16 @@ You can install the Bass Model Package from PyPI using pip:
 
     $ pip install mybassm
 
+
 Usage
 -----
 
 The package provides the following main functions:
 
-- `diffusion`: Calculate the diffusion of the product based on the Bass Model.
-- `bass_f`: Calculates the fraction of the total market that has adopters at time `t` using the Bass diffusion model.
-- `bass_F`: Calculates the fraction of the total market that has adopted up to and including time t using the Bass diffusion model.
-- `predict_bass_model`: Predicts future adoption rates based on a given set of time periods and the estimated Bass model parameters.
+- diffusion: Calculate the diffusion of the product based on the Bass Model.
+- bass_f: Calculates the fraction of the total market that has adopters at time `t` using the Bass diffusion model.
+- bass_F: Calculates the fraction of the total market that has adopted up to and including time t using the Bass diffusion model.
+- predict_bass_model: Predicts future adoption rates based on a given set of time periods and the estimated Bass model parameters.
 
 
 
@@ -78,7 +79,7 @@ References
 Contributing
 ------------
 
-Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on the (https://github.com/anukzak22/mybassm).
+Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on the `Github https://github.com/anukzak22/mybassm `_
 
 Authors
 -------
