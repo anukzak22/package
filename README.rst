@@ -67,13 +67,13 @@ Here's a simple example to demonstrate the usage of the Bass Model Package:
 License
 -------
 
-The Bass Model Package is released under the MIT License. For more information, see the [LICENSE](https://github.com/anukzak22/mybassm/blob/main/LICENSE) file.
+The Bass Model Package is released under the MIT License. For more information, see the [LICENSE] (https://github.com/anukzak22/mybassm/blob/main/LICENSE) file.
 
 References
 ----------
 
 - Suddhachit Mitra, "Forecasting the Diffusion of Innovative Products Using the Bass Model at the Takeoff Stage."
-- Professor Hovhanissyan lectures (add any relevant links or details here).
+- Professor Hovhanissyan lectures.
 
 Contributing
 ------------
