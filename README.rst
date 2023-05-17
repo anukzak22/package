@@ -1,35 +1,72 @@
-=======
-mybassm
-=======
+Bass Model Package
+==================
 
+.. image:: https://img.shields.io/pypi/v/bass-model.svg
+    :target: https://pypi.org/project/bass-model
+    :alt: PyPI Version
 
-.. image:: https://img.shields.io/pypi/v/mybassm.svg
-        :target: https://pypi.python.org/pypi/mybassm
+.. image:: https://img.shields.io/pypi/pyversions/bass-model.svg
+    :target: https://pypi.org/project/bass-model
+    :alt: Supported Python Versions
 
-.. image:: https://img.shields.io/travis/anukzak22/mybassm.svg
-        :target: https://travis-ci.com/anukzak22/mybassm
+.. image:: https://img.shields.io/pypi/l/bass-model.svg
+    :target: https://pypi.org/project/bass-model
+    :alt: License
 
-.. image:: https://readthedocs.org/projects/mybassm/badge/?version=latest
-        :target: https://mybassm.readthedocs.io/en/latest/?version=latest
-        :alt: Documentation Status
+Overview
+--------
 
-
-
-
-it is a packgae that does bass modeling 
-
-
-* Free software: MIT license
-* Documentation: https://mybassm.readthedocs.io.
-
+The Bass Model Package provides various functions for analyzing and predicting the diffusion of innovative products using the Bass Model. This package is based on the paper "Forecasting the Diffusion of Innovative Products Using the Bass Model at the Takeoff Stage" by Suddhachit Mitra and Professor Hovhanissyan lectures.
 
 Features
 --------
 
-Credits
--------
+- Calculate diffusion using the Bass Model.
+- Estimate parameters using the `bass_f` function.
+- Generate cumulative adoption curve using the `bass_F` function.
+- Predict future adoption using the `predict_bass_model` function.
+- Plot the predicted adoption curve.
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+Installation
+------------
 
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+You can install the Bass Model Package from PyPI using pip:
+
+.. code-block:: shell
+
+    $ pip install mybassm
+
+Usage
+-----
+
+The package provides the following main functions:
+
+- `diffusion`: Calculate the diffusion of the product based on the Bass Model.
+- `bass_f`: Calculates the fraction of the total market that has adopters at time `t` using the Bass diffusion model.
+- `bass_F`: Calculates the fraction of the total market that has adopted up to and including time t using the Bass diffusion model.
+- `predict_bass_model`: Predicts future adoption rates based on a given set of time periods and the estimated Bass model parameters.
+
+Examples
+--------
+
+Here's a simple example to demonstrate the usage of the Bass Model Package:
+
+```python
+from bass_model import diffusion, bass_f, bass_F, predict_bass_model
+
+# Calculate diffusion
+diffusion_rate = diffusion(sales, t)
+
+# Estimate Bass Model parameters
+p, q = bass_f(t, p, q)
+
+# Generate cumulative adoption curve
+t_values, cumulative_adoption = bass_F(t, p, q)
+
+# Predict future adoption
+params= p,q,m
+predicted_adoption = predict_bass_model(params, t)
+
+#Plots the bass model 
+plot_bass_model(params, y_pred)
+plot_bass(p, q, title)
