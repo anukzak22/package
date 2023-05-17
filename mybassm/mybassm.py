@@ -6,6 +6,8 @@ from scipy.optimize import minimize
 from scipy.integrate import quad
 import matplotlib.pyplot as plt
 import numpy as np
+
+
 """
 Module: bass_functions
 
@@ -73,7 +75,7 @@ def adoption_rate(t, p, q, m, N):
 def bass_f(t, p, q):
     """
     Calculates the fraction of the total market that has adopters at time `t` using the Bass diffusion model.
-    
+
         Parameters
         ----------
         t : numpy.ndarray

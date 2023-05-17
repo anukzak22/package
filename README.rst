@@ -51,22 +51,45 @@ Examples
 
 Here's a simple example to demonstrate the usage of the Bass Model Package:
 
-```python
-from bass_model import diffusion, bass_f, bass_F, predict_bass_model
+.. code-block:: python
+        from bass_model import diffusion, bass_f, bass_F, predict_bass_model
 
-# Calculate diffusion
-diffusion_rate = diffusion(sales, t)
+        # Calculate diffusion
+        diffusion_rate = diffusion(sales, t)
 
-# Estimate Bass Model parameters
-p, q = bass_f(t, p, q)
+        # Estimate Bass Model parameters
+        p, q = bass_f(t, p, q)
 
-# Generate cumulative adoption curve
-t_values, cumulative_adoption = bass_F(t, p, q)
+        # Generate cumulative adoption curve
+        t_values, cumulative_adoption = bass_F(t, p, q)
 
-# Predict future adoption
-params= p,q,m
-predicted_adoption = predict_bass_model(params, t)
+        # Predict future adoption
+        params= p,q,m
+        predicted_adoption = predict_bass_model(params, t)
 
-#Plots the bass model 
-plot_bass_model(params, y_pred)
-plot_bass(p, q, title)
+        #Plots the bass model 
+        plot_bass_model(params, y_pred)
+        plot_bass(p, q, title)
+
+
+
+License
+-------
+
+The Bass Model Package is released under the MIT License. For more information, see the [LICENSE](https://github.com/your-username/bass-model/blob/main/LICENSE) file.
+
+References
+----------
+
+- Suddhachit Mitra, "Forecasting the Diffusion of Innovative Products Using the Bass Model at the Takeoff Stage."
+- Professor Hovhanissyan lectures (add any relevant links or details here).
+
+Contributing
+------------
+
+Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on the [GitHub repository](https://github.com/anukzak22/bass-model).
+
+Authors
+-------
+
+- Anahit Zakaryan
