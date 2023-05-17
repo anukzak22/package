@@ -67,7 +67,7 @@ Here's a simple example to demonstrate the usage of the Bass Model Package:
 License
 -------
 
-The Bass Model Package is released under the MIT License. For more information, see the [LICENSE] (https://github.com/anukzak22/mybassm/blob/main/LICENSE) file.
+The Bass Model Package is released under the MIT License. For more information, see the LICENSE
 
 References
 ----------
@@ -78,7 +78,7 @@ References
 Contributing
 ------------
 
-Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on the [GitHub repository](https://github.com/anukzak22/mybassm).
+Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on the (https://github.com/anukzak22/mybassm).
 
 Authors
 -------
