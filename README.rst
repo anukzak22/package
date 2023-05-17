@@ -79,7 +79,7 @@ References
 Contributing
 ------------
 
-Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on the `Github <https://github.com/anukzak22/mybassm>`_
+Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on the `Github <https://github.com/anukzak22/package>`_
 
 Authors
 -------
